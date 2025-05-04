@@ -112,7 +112,7 @@ const DataAnalysis = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[300px]">
+                <div className="h-[220px]">
                   <ChartContainer
                     config={{
                       data: { color: "#1658cd" },
@@ -121,23 +121,24 @@ const DataAnalysis = () => {
                     <LineChart
                       data={yearlyDataVolume}
                       margin={{
-                        top: 20,
-                        right: 30,
-                        left: 20,
+                        top: 5,
+                        right: 20,
+                        left: 10,
                         bottom: 5,
                       }}
                     >
                       <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="name" />
-                      <YAxis />
+                      <XAxis dataKey="name" tick={{fontSize: 12}} />
+                      <YAxis tick={{fontSize: 12}} />
                       <ChartTooltip content={<ChartTooltipContent />} />
-                      <Legend />
+                      <Legend wrapperStyle={{fontSize: '12px'}} />
                       <Line 
                         type="monotone" 
                         dataKey="value" 
                         name="Data Volume (GB)" 
                         stroke="#1658cd" 
-                        activeDot={{ r: 8 }} 
+                        activeDot={{ r: 6 }} 
+                        strokeWidth={2}
                       />
                     </LineChart>
                   </ChartContainer>
@@ -153,7 +154,7 @@ const DataAnalysis = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[300px]">
+                <div className="h-[220px]">
                   <ChartContainer
                     config={{
                       technique: { color: "#1658cd" },
@@ -164,11 +165,11 @@ const DataAnalysis = () => {
                         data={analysisTechniques}
                         cx="50%"
                         cy="50%"
-                        labelLine={true}
-                        outerRadius={80}
+                        labelLine={false}
+                        outerRadius={70}
                         fill="#8884d8"
                         dataKey="value"
-                        label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                        label={({ name, percent }) => `${name.split(' ')[0]} ${(percent * 100).toFixed(0)}%`}
                       >
                         {analysisTechniques.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
@@ -189,7 +190,7 @@ const DataAnalysis = () => {
                 Data Analysis Project History
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -270,7 +271,7 @@ const DataAnalysis = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="h-[400px]">
+              <div className="h-[280px]">
                 <ChartContainer
                   config={{
                     tool: { color: "#1658cd" },
@@ -279,18 +280,18 @@ const DataAnalysis = () => {
                   <BarChart
                     data={toolsUsed}
                     margin={{
-                      top: 20,
-                      right: 30,
+                      top: 5,
+                      right: 20,
                       left: 20,
                       bottom: 5,
                     }}
                     layout="vertical"
                   >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis type="number" />
-                    <YAxis dataKey="name" type="category" />
+                    <XAxis type="number" tick={{fontSize: 12}} />
+                    <YAxis dataKey="name" type="category" tick={{fontSize: 12}} width={60} />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Legend />
+                    <Legend wrapperStyle={{fontSize: '12px'}} />
                     <Bar 
                       dataKey="value" 
                       name="Usage Percentage" 
