@@ -112,7 +112,7 @@ const DataAnalysis = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[220px]">
+                <div className="h-[250px]">
                   <ChartContainer
                     config={{
                       data: { color: "#1658cd" },
@@ -121,10 +121,10 @@ const DataAnalysis = () => {
                     <LineChart
                       data={yearlyDataVolume}
                       margin={{
-                        top: 5,
-                        right: 20,
-                        left: 10,
-                        bottom: 5,
+                        top: 15,
+                        right: 30,
+                        left: 20,
+                        bottom: 15,
                       }}
                     >
                       <CartesianGrid strokeDasharray="3 3" />
@@ -154,7 +154,7 @@ const DataAnalysis = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[220px]">
+                <div className="h-[250px]">
                   <ChartContainer
                     config={{
                       technique: { color: "#1658cd" },
@@ -166,7 +166,7 @@ const DataAnalysis = () => {
                         cx="50%"
                         cy="50%"
                         labelLine={false}
-                        outerRadius={70}
+                        outerRadius={80}
                         fill="#8884d8"
                         dataKey="value"
                         label={({ name, percent }) => `${name.split(' ')[0]} ${(percent * 100).toFixed(0)}%`}
@@ -271,7 +271,7 @@ const DataAnalysis = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="h-[280px]">
+              <div className="h-[240px]">
                 <ChartContainer
                   config={{
                     tool: { color: "#1658cd" },
@@ -280,10 +280,10 @@ const DataAnalysis = () => {
                   <BarChart
                     data={toolsUsed}
                     margin={{
-                      top: 5,
-                      right: 20,
+                      top: 15,
+                      right: 30,
                       left: 20,
-                      bottom: 5,
+                      bottom: 15,
                     }}
                     layout="vertical"
                   >
