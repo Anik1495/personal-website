@@ -112,7 +112,7 @@ const DataAnalysis = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[250px]">
+                <div className="h-[320px]">
                   <ChartContainer
                     config={{
                       data: { color: "#1658cd" },
@@ -121,10 +121,10 @@ const DataAnalysis = () => {
                     <LineChart
                       data={yearlyDataVolume}
                       margin={{
-                        top: 15,
-                        right: 30,
-                        left: 20,
-                        bottom: 15,
+                        top: 20,
+                        right: 50,
+                        left: 30,
+                        bottom: 20,
                       }}
                     >
                       <CartesianGrid strokeDasharray="3 3" />
@@ -137,8 +137,8 @@ const DataAnalysis = () => {
                         dataKey="value" 
                         name="Data Volume (GB)" 
                         stroke="#1658cd" 
-                        activeDot={{ r: 6 }} 
-                        strokeWidth={2}
+                        activeDot={{ r: 8 }} 
+                        strokeWidth={3}
                       />
                     </LineChart>
                   </ChartContainer>
@@ -154,7 +154,7 @@ const DataAnalysis = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[250px]">
+                <div className="h-[320px]">
                   <ChartContainer
                     config={{
                       technique: { color: "#1658cd" },
@@ -166,7 +166,7 @@ const DataAnalysis = () => {
                         cx="50%"
                         cy="50%"
                         labelLine={false}
-                        outerRadius={80}
+                        outerRadius={110}
                         fill="#8884d8"
                         dataKey="value"
                         label={({ name, percent }) => `${name.split(' ')[0]} ${(percent * 100).toFixed(0)}%`}
@@ -271,7 +271,7 @@ const DataAnalysis = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="h-[240px]">
+              <div className="h-[320px]">
                 <ChartContainer
                   config={{
                     tool: { color: "#1658cd" },
@@ -280,22 +280,23 @@ const DataAnalysis = () => {
                   <BarChart
                     data={toolsUsed}
                     margin={{
-                      top: 15,
-                      right: 30,
-                      left: 20,
-                      bottom: 15,
+                      top: 20,
+                      right: 50,
+                      left: 30,
+                      bottom: 20,
                     }}
                     layout="vertical"
                   >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis type="number" tick={{fontSize: 12}} />
-                    <YAxis dataKey="name" type="category" tick={{fontSize: 12}} width={60} />
+                    <YAxis dataKey="name" type="category" tick={{fontSize: 12}} width={80} />
                     <ChartTooltip content={<ChartTooltipContent />} />
                     <Legend wrapperStyle={{fontSize: '12px'}} />
                     <Bar 
                       dataKey="value" 
                       name="Usage Percentage" 
-                      radius={[0, 4, 4, 0]}
+                      radius={[0, 6, 6, 0]}
+                      barSize={40}
                     >
                       {toolsUsed.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />

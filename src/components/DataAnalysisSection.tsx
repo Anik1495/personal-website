@@ -61,7 +61,7 @@ const DataAnalysisSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[300px]">
+                <div className="h-[350px]">
                   <ChartContainer
                     config={{
                       healthcare: { color: "#1658cd" },
@@ -73,10 +73,10 @@ const DataAnalysisSection = () => {
                     <BarChart
                       data={projectTypesData}
                       margin={{
-                        top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 25,
+                        top: 15,
+                        right: 40,
+                        left: 30,
+                        bottom: 30,
                       }}
                     >
                       <CartesianGrid strokeDasharray="3 3" />
@@ -86,7 +86,7 @@ const DataAnalysisSection = () => {
                         content={<ChartTooltipContent />}
                       />
                       <Legend wrapperStyle={{fontSize: '12px'}} />
-                      <Bar dataKey="value" name="Percentage" barSize={30}>
+                      <Bar dataKey="value" name="Percentage" barSize={40}>
                         {projectTypesData.map((entry, index) => (
                           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}
@@ -105,7 +105,7 @@ const DataAnalysisSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[250px]">
+                <div className="h-[300px]">
                   <ChartContainer
                     config={{
                       python: { color: "#1658cd" },
@@ -120,7 +120,7 @@ const DataAnalysisSection = () => {
                         cx="50%"
                         cy="50%"
                         labelLine={false}
-                        outerRadius={80}
+                        outerRadius={100}
                         fill="#8884d8"
                         dataKey="value"
                         label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
