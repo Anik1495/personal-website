@@ -283,7 +283,7 @@ const DataAnalysis = () => {
                       top: 20,
                       right: 50,
                       left: 30,
-                      bottom: 20,
+                      bottom: 410,
                     }}
                     layout="vertical"
                   >

@@ -61,7 +61,7 @@ const DataAnalysisSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[350px]">
+                <div className="h-[200px]">
                   <ChartContainer
                     config={{
                       healthcare: { color: "#1658cd" },
@@ -73,13 +73,13 @@ const DataAnalysisSection = () => {
                     <BarChart
                       data={projectTypesData}
                       margin={{
-                        top: 15,
+                        top: 10,
                         right: 40,
                         left: 30,
-                        bottom: 30,
+                        bottom: 250,
                       }}
                     >
-                      <CartesianGrid strokeDasharray="3 3" />
+                      <CartesianGrid strokeDasharray="1 1" />
                       <XAxis dataKey="name" tick={{fontSize: 12}} />
                       <YAxis tick={{fontSize: 12}} />
                       <ChartTooltip
@@ -105,7 +105,7 @@ const DataAnalysisSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="h-[300px]">
+                <div className="h-[220px]">
                   <ChartContainer
                     config={{
                       python: { color: "#1658cd" },
@@ -119,8 +119,8 @@ const DataAnalysisSection = () => {
                         data={toolsData}
                         cx="50%"
                         cy="50%"
-                        labelLine={false}
-                        outerRadius={100}
+                        labelLine={true}
+                        outerRadius={90}
                         fill="#8884d8"
                         dataKey="value"
                         label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
