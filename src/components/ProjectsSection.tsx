@@ -11,13 +11,13 @@ const ProjectsSection = () => {
       title: "IoT-Based Real-Time Posture Monitoring System",
       description: "Created a system for monitoring posture in real time, utilizing a rubber band and hardware integration to identify the sitting posture angle.",
       link: "https://drive.google.com/drive/folders/1-b9XDQ-WGyQYua-pQO6fZOlDGwD5Mc3v?usp=sharing",
-      image: "/anik-personal-cv-site/loveable-uploads/IoT_Project.png"
+      image: "lovable-uploads/IoTProject.png"
     },
     {
       title: "Modeling of a Cost-Efficient Prosthetic Leg",
       description: "Utilised 3D modelling software to design a prosthetic limb, carefully combining all components to satisfy both practical and cosmetic requirements.",
       link: "https://grabcad.com/library/prosthetic-leg-18",
-      image: "/lovable-uploads/Prosthetic_Leg_Project.png"
+      image: "lovable-uploads/ProstheticLegProject.png"
     }
   ];
 
@@ -32,7 +32,7 @@ const ProjectsSection = () => {
               <Card key={index} className="card-hover overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-[1.02]">
                 <div className="h-64 bg-gray-200">
                   <img 
-                    src={project.image} 
+                    src={`${import.meta.env.BASE_URL}${project.image}`} 
                     alt={project.title}
                     className="w-full h-full object-contain bg-white"
                   />
