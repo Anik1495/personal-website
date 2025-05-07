@@ -11,14 +11,14 @@ const Projects = () => {
       title: "IoT-Based Real-Time Posture Monitoring System",
       description: "Created a system for monitoring posture in real time, utilizing a rubber band and hardware integration to identify the sitting posture angle. We integrated this system with a decision-making algorithm to categorize postures and implement immediate user feedback on the IoT platform.",
       link: "https://drive.google.com/drive/folders/1-b9XDQ-WGyQYua-pQO6fZOlDGwD5Mc3v?usp=sharing",
-      image: "/lovable-uploads/15aa1aba-5102-4dc0-9c1c-7263ed32c19d.png",
+      image: "/lovable-uploads/IoTProject.png",
       technologies: ["IoT", "Hardware Integration", "Decision Algorithms", "Real-time Monitoring"]
     },
     {
       title: "Modeling of a Cost-Efficient Prosthetic Leg",
       description: "Utilised 3D modelling software to design a prosthetic limb, carefully combining all components to satisfy both practical and cosmetic requirements.",
       link: "https://grabcad.com/library/prosthetic-leg-18",
-      image: "/lovable-uploads/6c12b103-b389-4ddb-9e6f-d14a164bb19a.png",
+      image: "/lovable-uploads/ProstheticLegProject.png",
       technologies: ["3D Modeling", "Prosthetic Design", "Biomedical Engineering"]
     }
   ];
@@ -39,7 +39,7 @@ const Projects = () => {
               <Card key={index} className="overflow-hidden h-full card-hover transition-transform duration-300 hover:shadow-lg hover:scale-[1.02]">
                 <div className="h-64 bg-white flex items-center justify-center">
                   <img 
-                    src={project.image} 
+                    src={`${import.meta.env.BASE_URL}${project.image}`} 
                     alt={project.title} 
                     className="w-full h-full object-contain"
                   />
