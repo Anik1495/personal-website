@@ -11,6 +11,7 @@ import SkillsSection from '@/components/SkillsSection';
 import LeadershipSection from '@/components/LeadershipSection';
 import ContactSection from '@/components/ContactSection';
 import DataAnalysisSection from '@/components/DataAnalysisSection';
+import ThoughtsSection from "@/components/ThoughtsSection";
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -26,6 +27,7 @@ const Index = () => {
       <DataAnalysisSection />
       <SkillsSection />
       <LeadershipSection />
+      <ThoughtsSection />
       <ContactSection />
       <Footer />
     </div>
