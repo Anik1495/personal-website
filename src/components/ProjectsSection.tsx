@@ -11,13 +11,13 @@ const ProjectsSection = () => {
       title: "IoT-Based Real-Time Posture Monitoring System",
       description: "Created a system for monitoring posture in real time, utilizing a rubber band and hardware integration to identify the sitting posture angle.",
       link: "https://drive.google.com/drive/folders/1-b9XDQ-WGyQYua-pQO6fZOlDGwD5Mc3v?usp=sharing",
-      image: "IoT_Project.png"
+      image: "/anik-personal-cv-site/loveable-uploads/IoT_Project.png"
     },
     {
       title: "Modeling of a Cost-Efficient Prosthetic Leg",
       description: "Utilised 3D modelling software to design a prosthetic limb, carefully combining all components to satisfy both practical and cosmetic requirements.",
       link: "https://grabcad.com/library/prosthetic-leg-18",
-      image: "Prosthetic_Leg_Project.png"
+      image: "/lovable-uploads/Prosthetic_Leg_Project.png"
     }
   ];
 
