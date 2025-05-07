@@ -14,7 +14,7 @@ const ExperienceSection = () => {
           <div className="relative border-l-2 border-cvblue pl-8 ml-4 mt-10">
             {/* Current Position */}
             <div className="mb-12 relative">
-              <div className="absolute -left-[41px] bg-white p-1 border-2 border-cvblue rounded-full">
+              <div className="absolute -left-[46px] bg-white p-1 border-2 border-cvblue rounded-full">
                 <div className="w-4 h-4 rounded-full bg-cvblue"></div>
               </div>
               
@@ -45,7 +45,7 @@ const ExperienceSection = () => {
             
             {/* Past Position */}
             <div className="relative">
-              <div className="absolute -left-[41px] bg-white p-1 border-2 border-cvblue rounded-full">
+              <div className="absolute -left-[46px] bg-white p-1 border-2 border-cvblue rounded-full">
                 <div className="w-4 h-4 rounded-full bg-cvblue"></div>
               </div>
               
