@@ -2,7 +2,7 @@
   "name": "anik-personal-site",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://anik1495.github.io/personal-website",
+  "homepage": "https://anik1495.github.io/personal-website/",
   "type": "module",
   "scripts": {
   "dev": "vite",
