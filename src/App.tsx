@@ -10,6 +10,8 @@ import Publications from "./pages/Publications";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import DataAnalysis from "./pages/DataAnalysis";
+import IriicPresentation from "./pages/thoughts/IriicPresentation";
+import MITSolvePost from "./pages/thoughts/MITSolvePost";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/data-analysis" element={<DataAnalysis />} />
+          <Route path="/thoughts/iriic-presentation" element={<IriicPresentation />} />
+          <Route path="/thoughts/mit-solve-proposal" element={<MITSolvePost />} />
           <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

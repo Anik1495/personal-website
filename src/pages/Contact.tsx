@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -7,24 +6,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin, Linkedin, User, BookText } from 'lucide-react';
-import { useToast } from '@/components/ui/use-toast';
 
 const Contact = () => {
-  const { toast } = useToast();
-  
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    // This would be replaced with actual form submission logic
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I will get back to you soon.",
-    });
-    
-    // Reset form
-    e.currentTarget.reset();
-  };
-
   const references = [
     {
       name: "Dr. Md. Asadur Rahman, PhD",
@@ -156,7 +139,11 @@ const Contact = () => {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-serif font-medium mb-4">Send Me a Message</h3>
                   
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form
+                    action="https://formspree.io/f/mvgargab"
+                    method="POST"
+                    className="space-y-4"
+                  >
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium">
@@ -164,47 +151,51 @@ const Contact = () => {
                         </label>
                         <Input
                           id="name"
+                          name="name"
                           placeholder="Your name"
                           required
                         />
                       </div>
-                      
+
                       <div className="space-y-2">
                         <label htmlFor="email" className="text-sm font-medium">
                           Email
                         </label>
                         <Input
                           id="email"
+                          name="email"
                           type="email"
                           placeholder="Your email address"
                           required
                         />
                       </div>
                     </div>
-                    
+
                     <div className="space-y-2">
                       <label htmlFor="subject" className="text-sm font-medium">
                         Subject
                       </label>
                       <Input
                         id="subject"
+                        name="subject"
                         placeholder="Message subject"
                         required
                       />
                     </div>
-                    
+
                     <div className="space-y-2">
                       <label htmlFor="message" className="text-sm font-medium">
                         Message
                       </label>
                       <Textarea
                         id="message"
+                        name="message"
                         placeholder="Your message"
                         rows={7}
                         required
                       />
                     </div>
-                    
+
                     <Button type="submit" className="w-full bg-cvblue hover:bg-blue-700 text-white">
                       Send Message
                     </Button>
