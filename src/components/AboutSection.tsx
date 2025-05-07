@@ -19,9 +19,9 @@ const AboutSection = () => {
               {/* 👇 Profile image and greeting */}
               <div className="text-center">
                 <img
-                  src="/profile.jpg"
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt="My Profile"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-40 h-60 mx-auto"
                 />
                 <h3 className="text-xl font-semibold mt-2">Hi, I'm Anik</h3>
               </div>
