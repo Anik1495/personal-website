@@ -23,7 +23,7 @@ function copy404Plugin() {
 }
 
 export default defineConfig({
-  base: "/anik-personal-cv-site/",
+  base: "/personal-website/",
   server: {
     host: "::",
     port: 8080,
