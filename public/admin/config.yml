@@ -6,13 +6,17 @@ media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "thoughts"
-    label: "Thoughts and Activities"
-    folder: "src/data/thoughts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Content", name: "body", widget: "markdown" }
-
+  - name: "about"
+    label: "About Section"
+    files:
+      - file: "src/content/about.yaml"
+        label: "About Info"
+        name: "about"
+        fields:
+          - label: "Bio Paragraphs"
+            name: "bio"
+            widget: "list"
+            field:
+              label: "Paragraph"
+              name: "paragraph"
+              widget: "text"
