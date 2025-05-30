@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "about"
+    label: "About Section"
+    files:
+      - file: "src/content/about.yaml"
+        label: "About Info"
+        name: "about"
+        fields:
+          - label: "Bio Paragraphs"
+            name: "bio"
+            widget: "list"
+            field:
+              label: "Paragraph"
+              name: "paragraph"
+              widget: "text"
