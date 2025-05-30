@@ -1,7 +1,43 @@
-import React from 'react';
-import { Book, Calendar, Code, File } from 'lucide-react';
+import React, { useEffect, useState } from "react";
+import { Book, Calendar, Code, File } from "lucide-react";
+
+interface AboutData {
+  bio: string[];
+  cv: {
+    url: string;
+    description: string;
+  };
+  education: {
+    degree: string;
+    institution: string;
+    years: string;
+    cgpa: string;
+  };
+  thesis: {
+    title: string;
+  };
+  fyp: {
+    title: string;
+  };
+  courses: string[];
+}
 
 const AboutSection = () => {
+  const [data, setData] = useState<AboutData | null>(null);
+
+  useEffect(() => {
+    fetch("/personal-website/content/about.yaml")
+      .then(res => res.text())
+      .then(text => {
+        const yaml = require("js-yaml");
+        const parsed = yaml.load(text) as AboutData;
+        setData(parsed);
+      })
+      .catch(err => console.error("Failed to load About content", err));
+  }, []);
+
+  if (!data) return <div className="text-center p-10">Loading...</div>;
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 md:px-6">
@@ -9,35 +45,22 @@ const AboutSection = () => {
           <h2 className="section-heading">About Me</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-            {/* Left column: profile + bio */}
+            {/* Left: Bio */}
             <div className="space-y-5">
               <div className="space-y-4">
-                <p className="text-gray-700">
-                  I am a biomedical engineer with expertise in Health Informatics, Digital Signal Processing, 
-                  Computational Modeling, and Machine Learning. Currently working as a Research Engineer 
-                  at the Institute of Research, Innovation, Incubation & Commercialization (IRIIC), 
-                  I focus on developing AI models and automated solutions for healthcare innovation.
-                </p>
-                <p className="text-gray-700">
-                  My research interests span across various domains of biomedical engineering and health informatics,
-                  with a particular focus on creating practical solutions that can improve healthcare outcomes
-                  and patient care through technological innovation.
-                </p>
-                <p className="text-gray-700">
-                  Through my work, I aim to bridge the gap between technological advancements and 
-                  healthcare needs, developing solutions that are both innovative and practical for real-world implementation.
-                </p>
+                {data.bio.map((paragraph, idx) => (
+                  <p className="text-gray-700" key={idx}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
 
-              {/* CV Section */}
+              {/* CV Box */}
               <div className="p-5 border-l-4 border-blue-600 bg-blue-50 rounded-md shadow-sm">
                 <h3 className="text-xl font-semibold text-blue-900 mb-2">Curriculum Vitae</h3>
-                <p className="text-gray-700 mb-3">
-                  For a detailed overview of my academic background, technical skills, and project experience, 
-                  you can view or download my full CV below.
-                </p>
+                <p className="text-gray-700 mb-3">{data.cv.description}</p>
                 <a
-                  href={`${import.meta.env.BASE_URL}Ferdous_Wahid_Anik_CV.pdf`}
+                  href={`${import.meta.env.BASE_URL}${data.cv.url}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-md transition shadow"
@@ -56,16 +79,16 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Right column: Academic profile */}
+            {/* Right: Academic */}
             <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
               <h3 className="font-serif text-xl font-medium text-gray-800 mb-4">Academic Profile</h3>
               <div className="space-y-5">
                 <div className="flex">
                   <Book className="mr-3 text-cvblue shrink-0 mt-1" size={22} />
                   <div>
-                    <h4 className="font-medium text-base">B.Sc. in Biomedical Engineering</h4>
-                    <p className="text-sm text-gray-600">Military Institute of Science and Technology (MIST), Dhaka, Bangladesh</p>
-                    <p className="text-sm text-gray-600">2019 - 2023 | CGPA: 3.30 out of 4.00</p>
+                    <h4 className="font-medium text-base">{data.education.degree}</h4>
+                    <p className="text-sm text-gray-600">{data.education.institution}</p>
+                    <p className="text-sm text-gray-600">{data.education.years} | {data.education.cgpa}</p>
                   </div>
                 </div>
 
@@ -73,7 +96,7 @@ const AboutSection = () => {
                   <File className="mr-3 text-cvblue shrink-0 mt-1" size={22} />
                   <div>
                     <h4 className="font-medium text-base">Thesis</h4>
-                    <p className="text-sm text-gray-600">Dual Signal Acquisition of Seismocardiography (SCG) and Electrocardiogram (ECG).</p>
+                    <p className="text-sm text-gray-600">{data.thesis.title}</p>
                   </div>
                 </div>
 
@@ -81,7 +104,7 @@ const AboutSection = () => {
                   <Code className="mr-3 text-cvblue shrink-0 mt-1" size={22} />
                   <div>
                     <h4 className="font-medium text-base">Final Year Project</h4>
-                    <p className="text-sm text-gray-600">Prediction of Gestational Diabetes Mellitus using ML classifiers.</p>
+                    <p className="text-sm text-gray-600">{data.fyp.title}</p>
                   </div>
                 </div>
 
@@ -90,7 +113,7 @@ const AboutSection = () => {
                   <div>
                     <h4 className="font-medium text-base">Significant Courses</h4>
                     <p className="text-sm text-gray-600">
-                      Biomedical Instrumentation, Digital Signal Processing, Bioinformatics, Medical Imaging, and more.
+                      {data.courses.join(", ")}
                     </p>
                   </div>
                 </div>

@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import fs from "fs";
 import pathModule from "path";
+import { viteStaticCopy } from "vite-plugin-static-copy"; // ✅ NEW
 
 function copy404Plugin() {
   return {
@@ -30,7 +31,15 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    copy404Plugin()
+    copy404Plugin(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "src/content/about.yaml", // ✅ Copy this file...
+          dest: "content",                // ✅ ...into /dist/content/about.yaml
+        },
+      ],
+    }),
   ],
   resolve: {
     alias: {
