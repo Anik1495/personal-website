@@ -37,7 +37,7 @@ const AboutSection = () => {
                   you can view or download my full CV below.
                 </p>
                 <a
-                  href={"${import.meta.env.BASE_URL}Ferdous_Wahid_Anik_CV.pdf"}
+                  href="/Ferdous_Wahid_Anik_CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-md transition shadow"
