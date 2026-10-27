@@ -31,11 +31,18 @@ export const researchProjects: ResearchProject[] = [
       'Separated optional large-language-model query planning from evidence-grounded audit generation, with a deterministic retrieval fallback.',
       'Currently integrating the pipeline into a prescribing copilot intended to give reviewable feedback during entry and a whole-prescription review. This integration has not yet undergone clinical evaluation.'
     ],
-    media: [{
-      file: 'audit-architecture.png',
-      alt: 'Architecture diagram showing retrieval, evidence and audit stages',
-      caption: 'Architecture figure from a conference manuscript under review. PrescribeX interface screenshots will be added after they are supplied without patient information.'
-    }]
+    media: [
+      {
+        file: 'prescribing-copilot-demo.png',
+        alt: 'Prototype prescription-writing interface with section-level review alerts beside clinical entries',
+        caption: 'Prototype interface using fictional test data. Example alerts show the interaction design, not validated clinical performance.'
+      },
+      {
+        file: 'audit-architecture.png',
+        alt: 'Architecture diagram showing retrieval, evidence and audit stages',
+        caption: 'Architecture figure from a conference manuscript under review.'
+      }
+    ]
   },
   {
     title: 'DOSAGE and Antibiotic Dose Checking',
