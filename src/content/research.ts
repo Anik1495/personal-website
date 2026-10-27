@@ -19,7 +19,7 @@ export const researchImage = (file: string) => `${import.meta.env.BASE_URL}resea
 
 export const researchProjects: ResearchProject[] = [
   {
-    title: 'HEAT Prescription Audit and Prescribing Copilot',
+    title: 'AI-Assisted Prescription Auditing and Point-of-Prescribing CDSS',
     period: '2025–present',
     category: 'health-informatics',
     status: 'System integration in progress',
@@ -28,7 +28,7 @@ export const researchProjects: ResearchProject[] = [
     contributions: [
       'Organized a consultative workshop with more than 40 healthcare professionals to refine the research protocol and define prescribing concerns.',
       'Designed a pipeline that reconstructs patient context, normalizes medicines, retrieves source-linked guidance and validates structured audit output.',
-      'Separated optional large-language-model query planning from evidence-grounded audit generation, with a deterministic retrieval fallback.',
+      'Separated optional large-language-model (LLM) query planning from evidence-grounded audit generation, with a deterministic retrieval fallback.',
       'Currently integrating the pipeline into a prescribing copilot intended to give reviewable feedback during entry and a whole-prescription review. This integration has not yet undergone clinical evaluation.'
     ],
     media: [
@@ -45,7 +45,7 @@ export const researchProjects: ResearchProject[] = [
     ]
   },
   {
-    title: 'DOSAGE and Antibiotic Dose Checking',
+    title: 'Knowledge-Driven Antibiotic Dosing CDSS',
     period: '2023–2025',
     category: 'health-informatics',
     status: 'Dataset published in Scientific Data',
@@ -63,7 +63,7 @@ export const researchProjects: ResearchProject[] = [
     }]
   },
   {
-    title: 'Prescription Audit Feasibility and Evidence-Grounded Pipeline',
+    title: 'AI-Based Prescription Audit Feasibility and Evidence-Grounded Methods',
     period: '2023–present',
     category: 'health-informatics',
     status: 'Research and implementation',
@@ -104,7 +104,7 @@ export const researchProjects: ResearchProject[] = [
     ]
   },
   {
-    title: 'Gestational Diabetes Prediction and Data Preparation',
+    title: 'Data-Driven Machine Learning for Gestational Diabetes Prediction',
     period: 'Undergraduate project, 2022',
     category: 'machine-learning',
     status: 'Co-authored IEEE ICCIT 2023 paper',
