@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 const ResearchSection = () => {
   const researchProjects = [
     {
-      title: "AI-Based Prescription Audit System",
+      title: "Evidence-Grounded Prescription Auditing",
       period: "Jul, 2023 - Present",
-      description: "Creating a robust protocol for auditing prescriptions and developing a hybrid model aimed at identifying and correcting common prescription errors.",
+      description: "Developing an evidence-grounded audit pipeline that relates potential concerns to patient context and clinical guidance, with integration into a prescribing copilot underway.",
       link: "https://iriic.uiu.ac.bd/ai-based-prescription-audit-system/",
     },
     {
@@ -20,9 +20,9 @@ const ResearchSection = () => {
       link: "/research",
     },
     {
-      title: "Signal Acquisition and Preprocessing for CVD Detection",
+      title: "Portable ECG-SCG Signal Acquisition",
       period: "Mar, 2022 - Feb, 2023",
-      description: "Designing a dual-signal acquisition system using MEMS interfaced with a microcontroller for cardiovascular disease detection.",
+      description: "Built a portable, synchronized ECG-SCG prototype and a MATLAB pipeline for cardiac and respiratory signal analysis.",
       link: "/research",
     },
     {
