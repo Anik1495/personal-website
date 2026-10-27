@@ -18,7 +18,7 @@ const Publications = () => (
           </section>
           <section>
             <h2 className="text-2xl font-serif font-semibold mb-6">Manuscripts Under Review</h2>
-            <p className="text-gray-600 mb-5">Journal names identify a submission venue. They do not indicate acceptance or publication.</p>
+            <p className="text-gray-600 mb-5">Journal and conference names identify submission venues. The links open venue websites, not the unpublished manuscripts; submission does not indicate acceptance.</p>
             <div className="space-y-5">{manuscriptsUnderReview.map((paper) => <ManuscriptCard key={paper.title} paper={paper} />)}</div>
           </section>
         </div>
