@@ -12,13 +12,13 @@ const Research = () => {
       period: "Sep 2025 - Present",
       link: "https://iriic.uiu.ac.bd/ai-based-prescription-audit-system/",
       category: "health-informatics",
-      description: "Technical development of a prescription-audit pipeline and its integration into a point-of-prescribing copilot.",
+      description: "I developed the technical plan for a broader prescription-audit system after piloting a focused antibiotic dose checker. The pipeline is under development and is being integrated into a point-of-prescribing copilot.",
       contributions: [
-        "Prepared the technical proposal, architecture, methodology and budget for the World Bank-funded HEAT project.",
-        "Organized a consultative workshop with healthcare professionals to refine audit requirements and the research protocol.",
-        "Developed an evidence-grounded pipeline that links candidate concerns with structured patient context and retrieved clinical guidance.",
-        "Added an optional language-model query-planning stage with deterministic fallback, separate from the evidence-grounded audit stage.",
-        "Integrating the pipeline into a prescribing copilot designed to provide reviewable feedback during prescription entry."
+        "Prepared the proposal, architecture, research methodology and budget that helped secure approximately USD 377,000 through the World Bank-funded HEAT initiative.",
+        "Organized a consultative workshop with more than 40 healthcare professionals to refine the research protocol and define prescribing concerns across six clinical domains.",
+        "Built patient-context reconstruction, deterministic medicine normalization, candidate generation, source-linked medicine and guideline retrieval, and structured output checks.",
+        "Separated optional language-model retrieval-query planning from evidence-grounded audit generation. A deterministic fallback supports retrieval when the planning stage is unavailable.",
+        "Currently integrating the pipeline into a prescribing copilot designed to provide reviewable feedback during entry and to assess the completed prescription. Clinical evaluation of this integration remains ahead."
       ]
     },
     {
@@ -75,7 +75,7 @@ const Research = () => {
         <div className="container mx-auto px-4 md:px-6">
           <h1 className="text-4xl font-serif font-bold mb-2 text-cvblue">Research Experience</h1>
           <p className="text-lg text-gray-600 mb-8">
-            Exploring the intersection of healthcare, technology, and data science to create innovative solutions.
+            Research in physiological sensing, structured clinical knowledge and evidence-grounded decision support.
           </p>
           
           <Tabs defaultValue="all" className="w-full">
