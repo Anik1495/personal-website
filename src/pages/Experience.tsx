@@ -10,31 +10,36 @@ import { ExternalLink } from 'lucide-react';
 const Experience = () => {
   const professionalExperience = [
     {
-      position: "Research Engineer",
-      organization: "Institute of Research, Innovation, Incubation & Commercialization (IRIIC)",
-      period: "Jul, 2023 - Present",
+      position: "Research Associate and Technical Lead",
+      organization: "HEAT Project, Department of Pharmacy and IRIIC, United International University",
+      period: "Sep 2025 - Present",
       website: "https://iriic.uiu.ac.bd",
       responsibilities: [
-        "Lead the design and development of AI models for healthcare innovation.",
-        "Apply machine learning and clinical decision support system for automation in tradition healthcare process.",
-        "Proficient in proposal writing, presentation delivery, and managing ethical approval procedures for successful grant submissions.",
-        "Handle requisitions and fund management for multiple expenses related to the project.",
-        "Conduct surveys to assess user requirements and acceptance of systems to guide the development and implementation of solutions.",
-        "Develop protocols for collecting data in real-world healthcare settings in accordance with project methodology.",
-        "Organize and facilitate consultative workshops for the project's process verification and methodology to gather essential feedback for refinement.",
-        "Ensure the accuracy and reliability of healthcare solutions by applying rigorous testing and clinical validation protocols in real-world clinical settings.",
-        "Coordinate efforts to convert ideas from research to commercialization by finding key opportunities and creating business models.",
-        "Contribute to research paper writing and publishing, supporting the overall process from drafting to submission in multiple projects."
+        "Prepared the technical proposal, system architecture, research methodology and budget for a World Bank-funded prescription-audit project.",
+        "Organized a consultative workshop with healthcare professionals to refine clinical requirements and the research protocol.",
+        "Lead technical development of evidence retrieval, clinical knowledge representation and language-model components for prescription review.",
+        "Coordinate engineers and clinical collaborators as the audit pipeline is integrated into a prescribing copilot."
+      ]
+    },
+    {
+      position: "Research Engineer",
+      organization: "AIMS Lab, IRIIC, United International University",
+      period: "Jul 2023 - Aug 2025",
+      website: "https://iriic.uiu.ac.bd",
+      responsibilities: [
+        "Designed the data protocol and curated DOSAGE, a clinician-reviewed antibiotic dosing dataset published in Scientific Data.",
+        "Worked with physicians and pharmacists to review prescribing recommendations and validate structured medication data.",
+        "Collaborated with CMED to integrate dose checking into a prescription-writing platform and pilot it with clinicians.",
+        "Supervised undergraduate research activities and mentored interns in data engineering and research practice."
       ]
     },
     {
       position: "Intern",
       organization: "JMI Hospital Requisite Manufacturing Ltd. (JHRML)",
-      period: "Feb, 2022 - March, 2022",
+      period: "Feb 2022 - Mar 2022",
       certificate: "https://drive.google.com/file/d/1vRy2a_3H2s1xlOh4gbrz4SHnzPQiWiVe/view?usp=sharing",
       responsibilities: [
-        "Developed a strong appreciation for the importance of precision and attention to detail in medical device manufacturing.",
-        "Gained a strong understanding of the importance of quality control and safety procedures in pathological product manufacturing."
+        "Observed medical-device manufacturing, quality control and safety procedures."
       ]
     }
   ];
