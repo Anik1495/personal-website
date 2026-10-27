@@ -11,9 +11,9 @@ const Hero = () => {
           {/* Left: Profile Image */}
           <div className="md:w-1/4 mb-4 md:mb-0 text-center md:text-left"> {/* Increased margin-bottom */}
             <img
-              src={`${import.meta.env.BASE_URL}profile.jpg`}
+              src={`${import.meta.env.BASE_URL}profile.png`}
               alt="Portrait of Ferdous Wahid Anik"
-              className="w-full max-w-[300px] h-auto object-cover mx-auto md:mx-0 border-4 border-blue-300 rounded-lg"
+              className="w-full max-w-[300px] aspect-[3/4] object-cover mx-auto md:mx-0 border-4 border-blue-300 rounded-lg"
             />
           </div>
 
