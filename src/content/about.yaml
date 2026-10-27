@@ -1,11 +1,11 @@
 bio:
-  - I am a biomedical engineer with expertise in Health Informatics, Digital Signal Processing, Computational Modeling, and Machine Learning. Currently working as a Research Engineer at the Institute of Research, Innovation, Incubation & Commercialization (IRIIC), I focus on developing AI models and automated solutions for healthcare innovation.
-  - My research interests span across various domains of biomedical engineering and health informatics, with a particular focus on creating practical solutions that can improve healthcare outcomes and patient care through technological innovation.
-  - Through my work, I aim to bridge the gap between technological advancements and healthcare needs, developing solutions that are both innovative and practical for real-world implementation.
+  - I am a biomedical engineering graduate of the Military Institute of Science and Technology and currently serve as Research Associate and Technical Lead at AIMS Lab, United International University.
+  - My research spans physiological sensing, clinical data science, health informatics, and knowledge-grounded AI. I built an ECG-SCG acquisition prototype for my undergraduate thesis and later developed DOSAGE, a clinician-reviewed antibiotic dosing dataset published in Scientific Data.
+  - I now lead technical development of a prescription-audit system that connects structured patient context with clinical guidance. My work includes research design, clinical consultation, software integration, and evaluation with healthcare collaborators.
 
 cv:
   url: "Ferdous_Wahid_Anik_CV.pdf"
-  description: "For a detailed overview of my academic background, technical skills, and project experience, you can view or download my full CV below."
+  description: "View or download my current CV for details of my research, publications, and experience."
 
 education:
   degree: "B.Sc. in Biomedical Engineering"
@@ -14,10 +14,10 @@ education:
   cgpa: "CGPA: 3.30 out of 4.00"
 
 thesis:
-  title: "Dual Signal Acquisition of Seismocardiography (SCG) and Electrocardiogram (ECG)."
+  title: "Design and Development of a Portable SCG-ECG Dual Signal Acquisition System."
 
 fyp:
-  title: "Prediction of Gestational Diabetes Mellitus using ML classifiers."
+  title: "Gestational diabetes prediction with a focus on how preprocessing choices affect model results."
 
 courses:
   - Biomedical Instrumentation

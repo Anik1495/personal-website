@@ -13,19 +13,13 @@ const AboutSection = () => {
             <div className="space-y-5">
               <div className="space-y-4">
                 <p className="text-gray-700">
-                  I am a biomedical engineer with expertise in Health Informatics, Digital Signal Processing, 
-                  Computational Modeling, and Machine Learning. Currently working as a Research Engineer 
-                  at the Institute of Research, Innovation, Incubation & Commercialization (IRIIC), 
-                  I focus on developing AI models and automated solutions for healthcare innovation.
+                  I am a biomedical engineering graduate of the Military Institute of Science and Technology and currently serve as Research Associate and Technical Lead at AIMS Lab, United International University.
                 </p>
                 <p className="text-gray-700">
-                  My research interests span across various domains of biomedical engineering and health informatics,
-                  with a particular focus on creating practical solutions that can improve healthcare outcomes
-                  and patient care through technological innovation.
+                  My research spans physiological sensing, clinical data science, health informatics, and knowledge-grounded AI. I built an ECG-SCG acquisition prototype for my undergraduate thesis and later developed DOSAGE, a clinician-reviewed antibiotic dosing dataset published in Scientific Data.
                 </p>
                 <p className="text-gray-700">
-                  Through my work, I aim to bridge the gap between technological advancements and 
-                  healthcare needs, developing solutions that are both innovative and practical for real-world implementation.
+                  I now lead technical development of a prescription-audit system that connects structured patient context with clinical guidance. My work includes research design, clinical consultation, software integration, and evaluation with healthcare collaborators.
                 </p>
               </div>
 
@@ -73,7 +67,7 @@ const AboutSection = () => {
                   <File className="mr-3 text-cvblue shrink-0 mt-1" size={22} />
                   <div>
                     <h4 className="font-medium text-base">Thesis</h4>
-                    <p className="text-sm text-gray-600">Dual Signal Acquisition of Seismocardiography (SCG) and Electrocardiogram (ECG).</p>
+                    <p className="text-sm text-gray-600">Design and Development of a Portable SCG-ECG Dual Signal Acquisition System.</p>
                   </div>
                 </div>
 
@@ -81,7 +75,7 @@ const AboutSection = () => {
                   <Code className="mr-3 text-cvblue shrink-0 mt-1" size={22} />
                   <div>
                     <h4 className="font-medium text-base">Final Year Project</h4>
-                    <p className="text-sm text-gray-600">Prediction of Gestational Diabetes Mellitus using ML classifiers.</p>
+                    <p className="text-sm text-gray-600">Gestational diabetes prediction with a focus on how preprocessing choices affect model results.</p>
                   </div>
                 </div>
 
