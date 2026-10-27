@@ -10,7 +10,7 @@ const PublicationsSection = () => (
     <div className="container mx-auto px-4 md:px-6">
       <div className="section-container">
         <h2 className="section-heading">Publications</h2>
-        <p className="text-gray-700 max-w-4xl mt-4">Figures appear only with published work. Manuscripts still under review are clearly separated and show the journal submitted to when that information is confirmed.</p>
+        <p className="text-gray-700 max-w-4xl mt-4">Figures appear only with published work. Manuscripts under review are listed separately with their submission venues; each card links to the journal or conference website.</p>
         <div className="space-y-5 mt-7">
           {publishedPapers.map((paper) => <PublishedPaperCard key={paper.doi} paper={paper} />)}
         </div>
