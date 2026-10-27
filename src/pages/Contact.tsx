@@ -8,23 +8,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin, Linkedin, User, BookText } from 'lucide-react';
 
 const Contact = () => {
-  const references = [
-    {
-      name: "Dr. Md. Asadur Rahman, PhD",
-      position: "Assistant Professor",
-      department: "Dept of Biomedical Engineering",
-      institution: "Military Institute of Science and Technology",
-      email: "asadur@bme.mist.ac.bd"
-    },
-    {
-      name: "Major Md. Ashrafuzzaman, PhD",
-      position: "Former Associate Professor",
-      department: "Dept of Biomedical Engineering",
-      institution: "Military Institute of Science and Technology",
-      email: "ashraf@bme.mist.ac.bd"
-    }
-  ];
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -104,30 +87,6 @@ const Contact = () => {
                         </a>
                       </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card>
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-serif font-medium mb-4">References</h3>
-                  
-                  <div className="space-y-6">
-                    {references.map((ref, index) => (
-                      <div key={index} className="space-y-1">
-                        <h4 className="font-medium text-cvblue">{ref.name}</h4>
-                        <p className="text-gray-700">{ref.position}</p>
-                        <p className="text-gray-700">{ref.department}</p>
-                        <p className="text-gray-700">{ref.institution}</p>
-                        <a href={`mailto:${ref.email}`} className="text-cvblue hover:underline">
-                          {ref.email}
-                        </a>
-                        
-                        {index < references.length - 1 && (
-                          <hr className="my-4 border-gray-200" />
-                        )}
-                      </div>
-                    ))}
                   </div>
                 </CardContent>
               </Card>
