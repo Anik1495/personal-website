@@ -11,8 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-serif text-xl font-semibold text-gray-800">Ferdous Wahid Anik</h3>
             <p className="text-gray-600">
-              Biomedical Engineer specializing in Health Informatics, Digital Signal Processing, 
-              Computational Modeling, and Machine Learning.
+              Biomedical engineer working across physiological sensing, clinical data science, and medication-safety decision support.
             </p>
           </div>
           
@@ -57,7 +56,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-gray-600">
                 <Github size={18} className="mr-2 text-cvblue" />
-                <a href="#" className="hover:text-cvblue">Github</a>
+                <a href="https://github.com/Anik1495" target="_blank" rel="noopener noreferrer" className="hover:text-cvblue">GitHub</a>
               </li>
             </ul>
           </div>
