@@ -74,9 +74,9 @@ export const researchProjects: ResearchProject[] = [
       'In a rule-label consistency analysis across four model deployments, exact concordance ranged from 88.9% to 95.1% against a physician-selected reference configuration. This is not a measure of clinical accuracy.'
     ],
     media: [{
-      file: 'prescription-audit-code.svg',
-      alt: 'Excerpt of implementation code constraining audit findings to supplied candidates and evidence',
-      caption: 'Selected source-code excerpt from the audit-generation stage. It contains no credentials or patient information.'
+      file: 'prescription-review-prisma.png',
+      alt: 'PRISMA flow diagram of study identification, screening and inclusion in the systematic review of automated prescription auditing',
+      caption: 'Study-selection figure from my systematic review manuscript under review. The review included 90 studies.'
     }]
   },
   {
