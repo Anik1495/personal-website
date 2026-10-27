@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, BookText } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { publishedPapers, manuscriptsUnderReview } from '@/content/publications';
 import { researchImage } from '@/content/research';
 
@@ -26,20 +26,24 @@ export const PublishedPaperCard = ({ paper }: { paper: PublishedPaper }) => (
 );
 
 export const ManuscriptCard = ({ paper }: { paper: Manuscript }) => (
-  <article className="grid md:grid-cols-[13rem_1fr] gap-5 rounded-xl border border-gray-200 bg-white overflow-hidden">
-    <div className="bg-gray-50 border-b md:border-b-0 md:border-r border-gray-200 min-h-32 flex flex-col justify-center items-center p-4 text-center">
-      {paper.journal ? <>
-        <span className="text-xs uppercase tracking-widest text-gray-500">Submitted to</span>
-        <span className="font-serif font-semibold text-lg text-cvblue mt-2 leading-tight">{paper.journal}</span>
-      </> : <>
-        <BookText size={27} className="text-cvblue" aria-hidden="true" />
-        <span className="text-sm text-gray-600 mt-2">Manuscript under review</span>
-      </>}
-    </div>
-    <div className="p-5 md:pl-0">
-      <h3 className="text-lg font-semibold text-cvblue">{paper.title}</h3>
-      <p className="text-gray-700 mt-2">{paper.authors}</p>
-      <p className="text-sm text-gray-600 mt-1">{paper.status}{paper.journal ? '. Journal name indicates submission only, not acceptance.' : '.'}</p>
-    </div>
+  <article className="rounded-xl border border-gray-200 bg-white overflow-hidden">
+    <a
+      href={paper.venueUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Open the ${paper.venue} website. ${paper.title} is a manuscript under review, not a published paper.`}
+      className="grid md:grid-cols-[13rem_1fr] hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cvblue"
+    >
+      <div className="bg-gray-50 border-b md:border-b-0 md:border-r border-gray-200 min-h-32 flex flex-col justify-center items-center p-4 text-center">
+        <span className="text-xs uppercase tracking-widest text-gray-500">{paper.venueKind}</span>
+        <span className="font-serif font-semibold text-lg text-cvblue mt-2 leading-tight">{paper.venue}</span>
+      </div>
+      <div className="p-5">
+        <h3 className="text-lg font-semibold text-cvblue inline-flex items-start gap-1">{paper.title}<ExternalLink size={15} className="shrink-0 mt-1" /></h3>
+        <p className="text-gray-700 mt-2">{paper.authors}</p>
+        <p className="text-sm text-gray-600 mt-1">{paper.status} · Submitted to {paper.venue}</p>
+        <p className="text-xs text-gray-500 mt-2">Opens the {paper.venueKind.toLowerCase()} website, not the unpublished manuscript.</p>
+      </div>
+    </a>
   </article>
 );
