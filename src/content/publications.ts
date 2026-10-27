@@ -85,7 +85,7 @@ export const manuscriptsUnderReview = [
     authors: 'M. B. Salim, Ferdous Wahid Anik, R. Shahid, Tahmina Foyez, Ohidujjaman, and Khondaker A. Mamun',
     status: 'Manuscript under review',
     venueKind: 'Conference',
-    venue: '7th ICEEICT (2027)',
+    venue: '7th ICEEICT',
     venueUrl: 'https://iceeict.mist.ac.bd/'
   }
 ];
