@@ -35,43 +35,57 @@ export const manuscriptsUnderReview = [
   {
     title: 'From Error to Accuracy: A Systematic Review of Automated Approaches to Detect and Correct Prescription Errors in Health Services',
     authors: 'Ferdous Wahid Anik, Fardeen Ahmed, Fahmid Al Rifat, Marzia Zaman, Farhana Sarker, and Khondaker A. Mamun',
-    status: 'Journal manuscript under review',
-    journal: 'BMC Health Services Research'
+    status: 'Manuscript under review',
+    venueKind: 'Journal',
+    venue: 'BMC Health Services Research',
+    venueUrl: 'https://link.springer.com/journal/12913'
   },
   {
     title: 'Evaluation of a Knowledge-Driven System for Detecting Antibiotic Dosage Errors in Prescriptions',
     authors: 'Ferdous Wahid Anik, Fahmid Al Rifat, Marzia Zaman, Farhana Sarker, and Khondaker A. Mamun',
-    status: 'Journal manuscript under review',
-    journal: 'Heliyon'
+    status: 'Manuscript under review',
+    venueKind: 'Journal',
+    venue: 'Array',
+    venueUrl: 'https://www.sciencedirect.com/journal/array'
   },
   {
     title: 'Design and Development of a Portable SCG-ECG Dual Signal Acquisition System',
     authors: 'Ferdous Wahid Anik, M. S. Chowdhury, and Md. Asadur Rahman',
-    status: 'Journal manuscript under review',
-    journal: 'Journal of Sensors'
+    status: 'Manuscript under review',
+    venueKind: 'Journal',
+    venue: 'Journal of Sensors',
+    venueUrl: 'https://onlinelibrary.wiley.com/journal/9161'
   },
   {
     title: 'A Knowledge-Constrained Architecture for Automated Prescription Auditing',
     authors: 'Ferdous Wahid Anik, M. B. Salim, R. Shahid, Tahmina Foyez, Ohidujjaman, and Khondaker A. Mamun',
-    status: 'Conference manuscript under review',
-    journal: ''
+    status: 'Manuscript under review',
+    venueKind: 'Conference',
+    venue: '29th ICCIT (2026)',
+    venueUrl: 'https://iccit.org.bd/2026/'
   },
   {
     title: 'STABLE: A Structured Dataset for Cardiovascular Drug Prescription Auditing',
     authors: 'R. Shahid, Ferdous Wahid Anik, R. Das, Tahmina Foyez, Ohidujjaman, and Khondaker A. Mamun',
-    status: 'Journal manuscript under review',
-    journal: ''
+    status: 'Manuscript under review',
+    venueKind: 'Journal',
+    venue: 'Scientific Data',
+    venueUrl: 'https://www.nature.com/sdata/'
   },
   {
     title: 'Feasibility and User Acceptance of a Digital Workplace Wellness Program for NCD Risk Management in a LMIC: A RE-AIM Framework Analysis',
     authors: 'Farhana Sarker, Ferdous Wahid Anik, Fardeen Ahmed, M. R. Hossen, Marzia Zaman, and Khondaker A. Mamun',
-    status: 'Journal manuscript under review',
-    journal: 'BMC Public Health'
+    status: 'Manuscript under review',
+    venueKind: 'Journal',
+    venue: 'BMC Public Health',
+    venueUrl: 'https://link.springer.com/journal/12889'
   },
   {
     title: 'Multi-LLM Benchmarking for Prescription Error Detection: A Clinical Evaluation Framework on Real-World Outpatient Data',
     authors: 'M. B. Salim, Ferdous Wahid Anik, R. Shahid, Tahmina Foyez, Ohidujjaman, and Khondaker A. Mamun',
-    status: 'Conference manuscript under review',
-    journal: ''
+    status: 'Manuscript under review',
+    venueKind: 'Conference',
+    venue: '7th ICEEICT (2027)',
+    venueUrl: 'https://iceeict.mist.ac.bd/'
   }
 ];
