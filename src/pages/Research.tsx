@@ -8,17 +8,29 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const Research = () => {
   const researchProjects = [
     {
-      title: "AI-Based Prescription Audit System",
-      period: "Jul, 2023 - Present",
+      title: "Evidence-Grounded Prescription Auditing",
+      period: "Sep 2025 - Present",
       link: "https://iriic.uiu.ac.bd/ai-based-prescription-audit-system/",
       category: "health-informatics",
-      description: "Creating a robust protocol for auditing prescriptions and developing a hybrid model aimed at identifying and correcting common prescription errors.",
+      description: "Technical development of a prescription-audit pipeline and its integration into a point-of-prescribing copilot.",
       contributions: [
-        "Formulation of Audit Protocol: Created a robust protocol for auditing prescriptions, starting from input data verification to anomaly detection.",
-        "Development of a Comprehensive Knowledge Base: To develop a personalized medication guideline in structured format, meticulously constructed a knowledge base by gathering medication information of drugs from various reputable clinical guidelines and pharmaceutical websites.",
-        "Model Development: Developed hybrid model (CDSS with ML) aimed at identifying and correcting common prescription errors.",
-        "Validation Using Real-World Clinical Data: Associated the model and knowledge base with real-world clinical data patterns by conducting an exploratory analysis of the dataset containing real prescriptions.",
-        "Interdisciplinary Collaboration and Ethics: Collaborated with healthcare experts for clinical validation of knowledge base, model validation and secured ethical approvals for data usage, ensuring compliance with clinical research protocols."
+        "Prepared the technical proposal, architecture, methodology and budget for the World Bank-funded HEAT project.",
+        "Organized a consultative workshop with healthcare professionals to refine audit requirements and the research protocol.",
+        "Developed an evidence-grounded pipeline that links candidate concerns with structured patient context and retrieved clinical guidance.",
+        "Added an optional language-model query-planning stage with deterministic fallback, separate from the evidence-grounded audit stage.",
+        "Integrating the pipeline into a prescribing copilot designed to provide reviewable feedback during prescription entry."
+      ]
+    },
+    {
+      title: "DOSAGE and Antibiotic Dose Checking",
+      period: "Jul 2023 - Aug 2025",
+      category: "health-informatics",
+      description: "Development of a clinician-reviewed antibiotic dosing dataset and its use in prescription-writing support.",
+      contributions: [
+        "Designed the DOSAGE data protocol and manually curated nearly 4,000 records covering 98 antibiotic generics.",
+        "Worked with physicians and pharmacists to resolve ambiguous recommendations and coordinate clinical review.",
+        "Published the dataset as first author in Scientific Data.",
+        "Worked with CMED to integrate dose checking into its prescription-writing platform and pilot the tool with clinicians."
       ]
     },
     {
@@ -33,14 +45,14 @@ const Research = () => {
       ]
     },
     {
-      title: "Signal Acquisition and Preprocessing for Further Research on Detecting CVD (Thesis)",
+      title: "Portable SCG-ECG Dual Signal Acquisition (Thesis)",
       period: "Mar, 2022 - Feb, 2023",
       category: "signal-processing",
-      description: "Designing a dual-signal acquisition system using MEMS interfaced with a microcontroller for cardiovascular disease detection.",
+      description: "Designed a synchronized ECG-SCG acquisition prototype and analysed paired recordings from healthy volunteers under resting conditions.",
       contributions: [
         "Hardware Integration: Designed and developed a dual-signal acquisition system that utilizes Microelectromechanical Systems (MEMS) interfaced with a versatile, user-friendly microcontroller.",
-        "Signal Processing: Utilized MATLAB for preprocessing the acquired signals, applying noise reduction techniques such as filtering and baseline correction to improve signal quality.",
-        "Interdisciplinary Approach and Collaboration: Integrated knowledge from physiology, electronics, and digital signal processing to design and conduct the experiments."
+        "Signal Processing: Developed MATLAB workflows for baseline correction, filtering, peak detection, cardiac timing and extraction of a respiratory waveform from SCG.",
+        "Interdisciplinary Approach and Collaboration: Designed a chest belt to stabilize the accelerometer during noninvasive data collection and prepared a first-author manuscript now under review."
       ]
     },
     {
