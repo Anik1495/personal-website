@@ -8,7 +8,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Mail, MapPin, Linkedin, User, BookText } from 'lucide-react';
 
 const Contact = () => {
-
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -91,8 +90,6 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
-              
-
             </div>
             
             {/* Contact Form */}
