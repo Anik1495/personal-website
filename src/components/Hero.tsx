@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="md:w-1/4 mb-4 md:mb-0 text-center md:text-left"> {/* Increased margin-bottom */}
             <img
               src={`${import.meta.env.BASE_URL}profile.jpg`}
-              alt="My Profile"
+              alt="Portrait of Ferdous Wahid Anik"
               className="w-full max-w-[300px] h-auto object-cover mx-auto md:mx-0 border-4 border-blue-300 rounded-lg"
             />
           </div>
@@ -23,11 +23,10 @@ const Hero = () => {
               Ferdous Wahid Anik
             </h1>
             <h2 className="text-2xl md:text-3xl font-serif font-medium text-cvblue">
-              Biomedical Engineer & Health Informatics Researcher
+              Biomedical Engineer | Research Associate & Technical Lead
             </h2>
             <p className="text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
-              Specializing in Health Informatics, Digital Signal Processing, Computational Modeling, 
-              and Machine Learning to develop innovative healthcare solutions.
+              I work across biomedical signal processing, clinical data science, and evidence-grounded decision support. At AIMS Lab, I develop medication-safety tools with clinical and engineering collaborators.
             </p>
             <div className="flex space-x-4 pt-4 justify-center md:justify-start">
               <Button className="bg-cvblue hover:bg-blue-700 text-white">
@@ -55,11 +54,11 @@ const Hero = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2">•</span>
-                    Digital Signal Processing
+                    Biomedical Signal Processing
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2">•</span>
-                    Computational Modeling
+                    Clinical Decision Support
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2">•</span>
